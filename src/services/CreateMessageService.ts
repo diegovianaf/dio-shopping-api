@@ -11,11 +11,11 @@ class CreateMessageService {
     const messageRepository = getCustomRepository(MessagesRepository)
 
     if (!email) {
-      throw new Error("Por favor informe um email!")
+      throw new Error("Please enter an email address!")
     }
 
     if (!message) {
-      throw new Error("Por favor escreva uma messagem!")
+      throw new Error("Please enter a message!")
     }
 
     const newMessage = messageRepository.create({ email, message })
