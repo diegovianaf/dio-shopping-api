@@ -8,6 +8,9 @@ class Message {
   readonly id: string
 
   @Column()
+  email: string
+
+  @Column()
   message: string
   
   @CreateDateColumn()
